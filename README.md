@@ -140,7 +140,7 @@ For example:
 C,C,C,C,C,0,0,0,0
 B,B,B,B,0,0,0,D,0
 0,0,0,0,0,0,0,D,0
-0,0,0,0,0,0,0,0,0
+R,0,0,0,0,0,0,0,0
 R,0,0,0,0,0,0,0,0
 R,0,0,0,0,0,0,0,0
 S,S,S,0,0,0,0,0,0
@@ -154,7 +154,7 @@ This is **unbalanced** because column 1 contains 4 different ships.
 C,C,C,C,C,0,0,0,0
 0,0,0,0,0,0,0,D,0
 0,0,0,0,0,0,0,D,0
-0,0,0,0,0,0,0,0,0
+R,0,0,0,0,0,0,0,0
 R,0,0,0,0,B,B,B,B
 R,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0
@@ -167,5 +167,5 @@ Update your `ValidateRunner` to use `balanced()`. A run of the program should lo
 ```
 Input: battleship_board_1.csv
 This board is Valid.
-This baord is Balanced.
+This board is Balanced.
 ```

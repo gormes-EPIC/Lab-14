@@ -30,6 +30,16 @@ Now add the following methods. You may add additional private methods as necessa
 | public double sumRow(int row)    | Sums the contents of the `Heatmap` from the given row and returns the sum    |
 | public int areCold ()            | Counts and returns the number of data points under 10 degrees                |
 
+If your Eclipse isn't recognizing `java.swing`. 
+1. Right-click on the project
+2. Select properties
+3. Java build path
+4. Library > Add Library > Add JRE SYSTEM Library
+5. Execution Environment
+6. Select JavaSE-1.7 (or 1.8 or even higher)
+7. Finish
+
+
 ## Battleship Game Board Validator
 
 For this section, you will be creating a program to validate Battleship game boards. The game board is a 10 by 10 array of Strings(or chars). 

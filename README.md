@@ -1,4 +1,4 @@
-# Lab 14
+# 2D Array
 
 ## Heat Map
 

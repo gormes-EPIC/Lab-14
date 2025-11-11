@@ -83,16 +83,16 @@ S,S,S,0,0,0,0,0,0,0
 This is an **invalid** battleship board. It is 10 by 10, but is missing the Destroyer. 
 
 ```
-O,O,O,O,O,C,C,C,C,C
-O,O,O,O,O,R,O,O,O,O
-O,O,O,O,R,O,O,O,O,O
-O,O,O,R,O,O,O,O,O,O
-O,O,O,B,B,B,B,0,O,O
-O,O,O,O,O,O,O,O,O,O
-O,O,O,O,O,O,O,O,O,O
+0,0,0,0,0,C,C,C,C,C
+0,0,0,0,0,R,0,0,0,0
+0,0,0,0,R,0,0,0,0,0
+0,0,0,R,0,0,0,0,0,0
+0,0,0,B,B,B,B,0,0,0
+0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0
 D,0,0,0,0,S,S,S,0,0
-D,O,O,O,O,O,O,O,O,O
-O,O,O,O,O,O,O,O,O,O
+D,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0
 ```
 
 This is an **invalid** battleship board. It is 10 by 10, but the Cruiser has been placed diagonally.
@@ -145,29 +145,29 @@ Create a new static method in `Validate` called `balanced(String[][] board)`. Th
 
 For example:
 ```
-0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0
-C,C,C,C,C,0,0,0,0
-B,B,B,B,0,0,0,D,0
-0,0,0,0,0,0,0,D,0
-R,0,0,0,0,0,0,0,0
-R,0,0,0,0,0,0,0,0
-R,0,0,0,0,0,0,0,0
-S,S,S,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0
+C,C,C,C,C,0,0,0,0,0
+B,B,B,B,0,0,0,D,0,0
+0,0,0,0,0,0,0,D,0,0
+R,0,0,0,0,0,0,0,0,0
+R,0,0,0,0,0,0,0,0,0
+R,0,0,0,0,0,0,0,0,0
+S,S,S,0,0,0,0,0,0,0
 ```
 
 This is **unbalanced** because column 1 contains 4 different ships. 
 
 ```
-0,0,S,S,S,0,0,0,0
-0,0,0,0,0,0,0,0,0
-C,C,C,C,C,0,0,0,0
-0,0,0,0,0,0,0,D,0
-0,0,0,0,0,0,0,D,0
-R,0,0,0,0,0,0,0,0
-R,0,0,0,0,B,B,B,B
-R,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0
+0,0,S,S,S,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0
+C,C,C,C,C,0,0,0,0,0
+0,0,0,0,0,0,0,D,0,0
+0,0,0,0,0,0,0,D,0,0
+R,0,0,0,0,0,0,0,0,0
+R,0,0,0,0,B,B,B,B,0
+R,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0
 ```
 
 This is **balanced** because each row and column contains 2 or fewer ships.
